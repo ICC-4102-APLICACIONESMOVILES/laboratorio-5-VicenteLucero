@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
     private NetworkManager networkManager;
     String toke;
     String sesion;
+    String formas;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,6 +62,8 @@ public class MainActivity extends AppCompatActivity {
         SharedPreferences.Editor editor = pref.edit();
         editor.putString(toke, sesion );
         editor.apply();
+        //formas = getForms(new Response.Listener<JSONObject>();
+
 
     }
 
@@ -89,5 +92,6 @@ public class MainActivity extends AppCompatActivity {
                 System.out.println(error);
             }
         });
+        //return response;
     }
 }
