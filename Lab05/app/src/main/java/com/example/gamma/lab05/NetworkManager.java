@@ -99,7 +99,6 @@ public class NetworkManager {
 
         String url = BASE_URL + "forms/";
         makeApiCall(Request.Method.GET, url, null,listener, errorListener);
-
     }
 
     private void makeApiCall(int method, String url, JSONObject payload, Response.Listener<JSONObject> listener,
