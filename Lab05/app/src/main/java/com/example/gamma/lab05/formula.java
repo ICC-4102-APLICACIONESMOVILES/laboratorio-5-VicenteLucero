@@ -64,6 +64,10 @@ public class formula extends AppCompatActivity {
                             FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
                             fragmentTransaction.replace(R.id.content_frame, formul).commit();
                         }
+                        if(menuItem.getItemId()==R.id.nav_Logout)
+                        {
+                            onLOGOUTClick();
+                        }
 
 
                         return true;
@@ -106,7 +110,7 @@ public class formula extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void onLOGOUTClick(View view)
+    public void onLOGOUTClick()
     {
 
         SharedPreferences.Editor editor = pref.edit();
